@@ -72,7 +72,7 @@ All responses will have the form
 
 **Arguments**
 
-- Heders: `"Authorization": "Berear {token}` the JWT token needs to be passed as headers
+- Headers: `"Authorization": "Berear {token}` the JWT token needs to be passed as headers
 
 **Response**
 
