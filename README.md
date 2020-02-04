@@ -3,7 +3,7 @@
 
 ### Execution
 * Download the dependencies of package.json: `npm install`
-* Run with: `npm start
+* Run with: `npm start`
 
 ### Execution with Docker
 
