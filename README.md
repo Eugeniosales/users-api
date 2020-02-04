@@ -13,11 +13,8 @@ All responses will have the form
 ```json
 {
     "data": "Mixed type holding the content of the response",
-    "message": "Description of what happened"
 }
 ```
-
-Subsequent response definitions will only detail the expected value of the `data field`
 
 ### Login
 
@@ -37,7 +34,7 @@ Subsequent response definitions will only detail the expected value of the `data
 ```json
 [
     {
-        "token": "Token gerado com JWT"
+        "token": "sfdsgw34$@#$%@wretasfsfgasdgqe#$%T$WQafsd"
     }
 ]
 ```
@@ -75,7 +72,7 @@ Subsequent response definitions will only detail the expected value of the `data
 
 **Arguments**
 
-- Heders: `"Authorization": "Berear {token}` the JWT token needs to be passed as headers
+- Headers: `"Authorization": "Berear {token}` the JWT token needs to be passed as headers
 
 **Response**
 
