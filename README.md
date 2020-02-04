@@ -42,7 +42,7 @@ All responses will have the form
 ]
 ```
 
-### Regiter users
+### Register users
 
 **Definition**
 
