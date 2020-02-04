@@ -10,4 +10,4 @@ CREATE TABlE users (
     	PRIMARY KEY(id)
 );
 
-INSERT INTO users (first_name, last_name, email, password) VALUES ('eugenio', 'sales', 'eugenio.sales@esportese.com', 'uchiha');
+INSERT INTO users (first_name, last_name, email, password) VALUES ('ex', 'ex', 'ex@gmail.com', '####');
