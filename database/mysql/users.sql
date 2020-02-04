@@ -1,5 +1,4 @@
-CREATE DATABASE users;
-USE users;
+USE db;
 CREATE TABlE users (
 	id INT AUTO_INCREMENT,
     	first_name VARCHAR(100),
