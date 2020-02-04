@@ -6,18 +6,18 @@ const config = require('../config.json');
 const router = express.Router();
 var sql;
 
-// Get all users
-router.get('/users', (req, res) => {
-    sql = 'SELECT * FROM users';
+
+router.get('/', (req, res) => {
+    const sql = "SELECT * FROM users";
     db.query(sql, (err, response) => {
-        if(err) throw err;
         res.json(response);
     });
+        
 });
 
 // Get Authenticated user
 router.get('/auth',  verifyToken, (req, res) => {
-    jwt.verify(req.token, config.secret, (err, authData) => {
+    jwt.verify(req.token, process.env.SECRET, (err, authData) => {
         
 	const { data } = authData;
 
@@ -77,7 +77,7 @@ router.post('/login', (req, res) => {
         if(user.length){
             let data = user[0];
             if(bcrypt.compareSync(req.body.password, data.password)){
-                jwt.sign({ data }, config.secret, { expiresIn: '2000s' }, (err, token) => {
+                jwt.sign({ data }, process.env.SECRET, { expiresIn: '2000s' }, (err, token) => {
                     res.json({ token });
                 });
             }

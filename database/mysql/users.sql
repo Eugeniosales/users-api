@@ -9,3 +9,5 @@ CREATE TABlE users (
     	is_adimin BOOLEAN,
     	PRIMARY KEY(id)
 );
+
+INSERT INTO users (first_name, last_name, email, password) VALUES ('eugenio', 'sales', 'eugenio.sales@esportese.com', 'uchiha');
